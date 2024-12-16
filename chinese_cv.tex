@@ -16,10 +16,10 @@
 % Packages:
 \usepackage[
     ignoreheadfoot, % set margins without considering header and footer
-    top=1.6 cm, % seperaation between body and page edge from the top
-    bottom=1.6 cm, % seperation between body and page edge from the bottom
-    left=1.6 cm, % seperation between body and page edge from the left
-    right=1.6 cm, % seperation between body and page edge from the right
+    top=1.3 cm, % seperaation between body and page edge from the top
+    bottom=1.3 cm, % seperation between body and page edge from the bottom
+    left=1.4 cm, % seperation between body and page edge from the left
+    right=1.4 cm, % seperation between body and page edge from the right
     footskip=1.0 cm, % seperation between body and footer
     % showframe % for debugging 
 ]{geometry} % for adjusting page geometry
@@ -212,9 +212,9 @@
 \newsavebox\ANDbox
 \sbox\ANDbox{}
 
-\placelastupdatedtext
+% \placelastupdatedtext
 \begin{header}
-    \fontsize{30 pt}{30 pt}
+    \fontsize{28 pt}{28 pt}
     \textbf{彭煜博}
 
     \vspace{0.3 cm}
@@ -287,11 +287,11 @@
         2022.09 – 2024.09
     }
     \textbf{國立成功大學}, 資訊工程研究所
-    \begin{highlights}
-        \item \textbf{修課內容:} \hspace{0.1cm} 多語暨跨語資訊系統, Linux 核心實作, 計算機結構
-        \item \textbf{研究:} \hspace{0.1cm} 基於新聞議題自動生成隱含問句之推理問答系統設計與實現
-        \item \textbf{相關技術:} \hspace{0.1cm} NLP, Knowledge Graph, Neo4j
-    \end{highlights}
+    % \begin{highlights}
+    %     \item \textbf{修課內容:} \hspace{0.1cm} 多語暨跨語資訊系統, Linux 核心實作, 計算機結構
+    %     \item \textbf{研究:} \hspace{0.1cm} 基於新聞議題自動生成隱含問句之推理問答系統設計與實現
+    %     \item \textbf{相關技術:} \hspace{0.1cm} NLP, Knowledge Graph, Neo4j
+    % \end{highlights}
 \end{threecolentry}
 
 
@@ -301,11 +301,11 @@
         2018.09 – 2022.06
     }
     \textbf{國立中山大學}, 資訊工程學系
-    \begin{highlights}
-        \item \textbf{修課內容:} \hspace{0.1cm} 數位影像處理, 深度學習, 網路應用程式設計
-        \item \textbf{專題:} \hspace{0.1cm} 植基於屬性加密之外掛式郵件加密系統
-        \item \textbf{相關技術:} \hspace{0.1cm} Attribute-Based Encryption, Web Development
-    \end{highlights}
+    % \begin{highlights}
+    %     \item \textbf{修課內容:} \hspace{0.1cm} 數位影像處理, 深度學習, 網路應用程式設計
+    %     \item \textbf{專題:} \hspace{0.1cm} 植基於屬性加密之外掛式郵件加密系統
+    %     \item \textbf{相關技術:} \hspace{0.1cm} Attribute-Based Encryption, Web Development
+    % \end{highlights}
 \end{threecolentry}
 
 
@@ -393,7 +393,19 @@
     \textbf{亞仕丹醫療器材問答助手} \hspace{0.2cm} \hrefWithoutArrow{https://github.com/paulpeng-popo/ragllm}{\faGithub} \hfill \projectrole{主要開發者}
     \begin{highlights}
         \item 在大型語言模型 (LLM) 的基礎上實作 Retrival Argumented Generation (RAG) 的流程，強化模型回答的專業性與準確性，避免誤導使用者。
-        \item Ollama, Streamlit, LangChain, Chroma
+        \item \textbf{相關技術:} Ollama, Streamlit, LangChain, Chroma
+    \end{highlights}
+\end{twocolentry}
+
+\vspace{0.2 cm}
+
+\begin{twocolentry}{
+        2023.09 - 2024.07
+    }
+    \textbf{基於新聞議題自動生成隱含問句的推理問答系統設計與實現} \hfill \projectrole{主要開發者}
+    \begin{highlights}
+        \item 針對新聞議題自動生成隱含問句，並透過知識圖譜進行推理問答，提供使用者更多元的資訊。
+        \item \textbf{相關技術:} NLP, Chatbot, Knowledge Graph
     \end{highlights}
 \end{twocolentry}
 
@@ -416,10 +428,18 @@
     }
     \textbf{J-kumo(TW) 台灣日語學習雲端支援系統} \hspace{0.2cm} \hrefWithoutArrow{https://j-kumo.flld.ncku.edu.tw/}{\faDesktop} \hfill \projectrole{主要維護者}
     \begin{highlights}
-        \item 修復並以 Django 整合 6 個不同的子系統
-        \item 利用 shell script 與 docker compose 實現簡易自動化部署流程
-        \item \textbf{2023年9月上線至今累計約 70000 次瀏覽使用}
-        \item Django, SQL, Nginx, Docker
+        \item 以 Django 整合 6 個舊系統的服務，並利用 shell script 與 docker compose 實現簡易自動化部署流程，\textbf{2023年9月上線至今累計約 70000 次瀏覽使用}。
+        \item \textbf{相關技術:} Django, SQL, Nginx, Docker
+    \end{highlights}
+\end{twocolentry}
+
+\begin{twocolentry}{
+        2020.09 - 2021.10
+    }
+    \textbf{植基於屬性加密之外掛式郵件系統} \hspace{0.2cm} \hrefWithoutArrow{https://github.com/paulpeng-popo/Security_mail}{\faGithub} \hfill \projectrole{主要開發者}
+    \begin{highlights}
+        \item 在原有的 Gmail 系統上，加上屬性加密流程，既防止郵件內容遭到竊取，又能在已加密的文字上做搜尋。
+        \item \textbf{相關技術:} Attribute-Based Encryption, Gmail API, AWS, System Design
     \end{highlights}
 \end{twocolentry}
 
@@ -447,7 +467,7 @@
     \textbf{Linux 核心專題實作 - fibdrv} \hspace{0.2cm} \hrefWithoutArrow{https://hackmd.io/@sysprog/Hk2NJG3H2}{\faGlobe} \hrefWithoutArrow{https://github.com/paulpeng-popo/fibdrv}{\faGithub}
     \begin{highlights}
         \item 實作費氏數列的 Linux 核心模組，使用 API 分析效能，並嘗試改進運算速度
-        \item C/C++, Linux Kernel
+        \item \textbf{相關技術:} C/C++, Linux Kernel
     \end{highlights}
 \end{twocolentry}
 
@@ -459,7 +479,7 @@
     \textbf{線上聊天服務} \hspace{0.2cm} \hrefWithoutArrow{https://github.com/paulpeng-popo/online_chatting}{\faGithub}
     \begin{highlights}
         \item 使用 Socket 與 Multi-process 實作簡易聊天室，支援多人同時聊天
-        \item C/C++, Socket Programming
+        \item \textbf{相關技術:} C/C++, Socket Programming
     \end{highlights}
 \end{twocolentry}
 

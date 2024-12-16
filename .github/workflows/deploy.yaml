@@ -1,4 +1,4 @@
-name: Build cv.tex and deploy to gh-pages
+name: Build latex and deploy to gh-pages
 
 on:
   push:
@@ -11,11 +11,13 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: thubo/latexmk:full
+    container:
+      image: thubo/latexmk:full
+      options: --user root
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Build
         run: make

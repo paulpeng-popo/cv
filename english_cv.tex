@@ -16,10 +16,10 @@
 % Packages:
 \usepackage[
     ignoreheadfoot, % set margins without considering header and footer
-    top=1.6 cm, % seperaation between body and page edge from the top
-    bottom=1.6 cm, % seperation between body and page edge from the bottom
-    left=1.6 cm, % seperation between body and page edge from the left
-    right=1.6 cm, % seperation between body and page edge from the right
+    top=1.3 cm, % seperaation between body and page edge from the top
+    bottom=1.3 cm, % seperation between body and page edge from the bottom
+    left=1.3 cm, % seperation between body and page edge from the left
+    right=1.3 cm, % seperation between body and page edge from the right
     footskip=1.0 cm, % seperation between body and footer
     % showframe % for debugging 
 ]{geometry} % for adjusting page geometry
@@ -224,10 +224,10 @@
 \newsavebox\ANDbox
 \sbox\ANDbox{}
 
-\placelastupdatedtext
+% \placelastupdatedtext
 \begin{header}
-    \fontsize{30 pt}{30 pt}
-    \textbf{Yu-Po Peng}
+    \fontsize{28 pt}{28 pt}
+    \textbf{Yu-Po Peng (Paul Peng)}
 
     \vspace{0.3 cm}
 
@@ -299,11 +299,11 @@
         Sep. 2022 - Sep. 2024
     }
     \textbf{National Cheng Kung University}, Computer Science and Information Engineering
-    \begin{highlights}
-        \item \textbf{Courses:} Linux Kernel Implementation, Computer Architecture
-        % \item \textbf{Research:} Design and Implementation of a Reasoning Question Answering System for Automatically Generating Implicit Questions Based on News Topics
-        \item \textbf{Skills:} NLP, Knowledge Graph, Neo4j
-    \end{highlights}
+    % \begin{highlights}
+    %     \item \textbf{Courses:} Linux Kernel Implementation, Computer Architecture
+    %     \item \textbf{Research:} Design and Implementation of a Reasoning Question Answering System for Automatically Generating Implicit Questions Based on News Topics
+    %     \item \textbf{Skills:} NLP, Knowledge Graph, Neo4j
+    % \end{highlights}
 \end{threecolentry}
 
 
@@ -313,11 +313,11 @@
         Sep. 2018 - Jun. 2022
     }
     \textbf{National Sun Yat-sen University}, Computer Science and Engineering
-    \begin{highlights}
-        \item \textbf{Courses:} Digital Image Processing, Deep Learning, Network Applications Programming
-        % \item \textbf{Project:} Secure Extended Mail System Based on Attribute-Based Encryption
-        \item \textbf{Skills:} Attribute-Based Encryption, Web Development
-    \end{highlights}
+    % \begin{highlights}
+    %     \item \textbf{Courses:} Digital Image Processing, Deep Learning, Network Applications Programming
+    %     \item \textbf{Project:} Secure Extended Mail System Based on Attribute-Based Encryption
+    %     \item \textbf{Skills:} Attribute-Based Encryption, Web Development
+    % \end{highlights}
 \end{threecolentry}
 
 
@@ -387,13 +387,13 @@
 \end{honorentry}
 
 
-\begin{honorentry}{
-        2021
-    }{
-        \hrefWithoutArrow{https://cse.nsysu.edu.tw/p/412-1205-23062.php?Lang=zh-tw}{\faGlobe}
-    }
-    \textbf{Provision Information Security Award}, College of Engineering Joint Project Competition, National Sun Yat-sen University
-\end{honorentry}
+% \begin{honorentry}{
+%         2021
+%     }{
+%         \hrefWithoutArrow{https://cse.nsysu.edu.tw/p/412-1205-23062.php?Lang=zh-tw}{\faGlobe}
+%     }
+%     \textbf{Provision Information Security Award}, College of Engineering Joint Project Competition, National Sun Yat-sen University
+% \end{honorentry}
 
 
 \section{Projects}
@@ -405,7 +405,19 @@
     \textbf{Medical QA Assistant} \hspace{0.2cm} \hrefWithoutArrow{https://github.com/paulpeng-popo/ragllm}{\faGithub} \hfill \projectrole{Lead Developer}
     \begin{highlights}
         \item Implemented Retrieval-Augmented Generation (RAG) using Large Language Models (LLMs) to \textbf{enhance response accuracy and responsibility}, avoiding user misguidance.
-        \item Ollama, Streamlit, LangChain, Chroma
+        \item \textbf{Skills:} Ollama, Streamlit, LangChain, Chroma
+    \end{highlights}
+\end{twocolentry}
+
+\vspace{0.2 cm}
+
+\begin{twocolentry}{
+        Sep. 2023 - Jul. 2024
+    }
+    \textbf{QA System for Generating Implicit Questions} \hfill \projectrole{Lead Developer}
+    \begin{highlights}
+        \item Using knowledge graph and NLP techniques to \textbf{implement a reasoning question answering system} for generating implicit questions based on news topics.
+        \item \textbf{Skills:} NLP, Knowledge Graph, Neo4j
     \end{highlights}
 \end{twocolentry}
 
@@ -428,10 +440,21 @@
     }
     \textbf{J-kumo (TW) Support System for Japanese Learning} \hspace{0.2cm} \hrefWithoutArrow{https://j-kumo.flld.ncku.edu.tw/}{\faDesktop} \hfill \projectrole{Primary Maintainer}
     \begin{highlights}
-        \item Repaired and integrated six subsystems using Django.
-        \item Streamlined deployment with shell scripts and Docker Compose
-        \item \textbf{Accumulating 70,000+ visits since its launch in September 2023}
-        \item Django, SQL, Nginx, Docker
+        \item Integrated six services from legacy systems by using \textbf{Django} and \textbf{streamlined deployment with shell scripts and Docker Compose}.
+        % \item \textbf{Accumulating 70,000+ visits since its launch in September 2023}
+        \item \textbf{Skills:} Django, SQL, Nginx, Docker
+    \end{highlights}
+\end{twocolentry}
+
+\vspace{0.2 cm}
+
+\begin{twocolentry}{
+        Sep. 2020 - Oct. 2021
+    }
+    \textbf{Nmail System} \hspace{0.2cm} \hrefWithoutArrow{https://github.com/paulpeng-popo/Security_mail}{\faGithub} \hfill \projectrole{Lead Developer}
+    \begin{highlights}
+        \item Design a system that allows users to encrypt their emails with \textbf{ABE} before sending them.
+        \item \textbf{Skills:} Attribute-Based Encryption(ABE), Gmail API, AWS, System Design
     \end{highlights}
 \end{twocolentry}
 
@@ -458,8 +481,8 @@
     }
     \textbf{Linux Kernel Project - fibdrv} \hspace{0.2cm} \hrefWithoutArrow{https://hackmd.io/@sysprog/Hk2NJG3H2}{\faGlobe} \hrefWithoutArrow{https://github.com/paulpeng-popo/fibdrv}{\faGithub}
     \begin{highlights}
-        \item Developed a Linux kernel module for Fibonacci sequence calculation, optimizing performance through API analysis.
-        \item C/C++, Linux Kernel
+        \item Write a kernel module of Fibonacci sequence, then optimizing its performance.
+        \item \textbf{Skills:} C/C++, Linux Kernel
     \end{highlights}
 \end{twocolentry}
 
@@ -470,8 +493,8 @@
     }
     \textbf{Online Chat Service} \hspace{0.2cm} \hrefWithoutArrow{https://github.com/paulpeng-popo/online_chatting}{\faGithub}
     \begin{highlights}
-        \item Built a simple chatroom supporting multiple users simultaneously using Sockets and Multi-process programming.
-        \item C/C++, Socket Programming
+        \item Built a simple chatroom supporting multiple users simultaneously.
+        \item \textbf{Skills:} C/C++, Socket Programming
     \end{highlights}
 \end{twocolentry}
 
