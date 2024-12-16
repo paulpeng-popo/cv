@@ -19,8 +19,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install Make
-        run: apt-get update && apt-get install -y make
+      - name: Install Dependencies
+        run: |
+          apt-get update
+          apt-get install -y make git
 
       - name: Build
         run: make
