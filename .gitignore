@@ -4,9 +4,9 @@
 *.swp
 *.nosync
 old_cv/*
+others/*
 *.ppt
 *.pptx
 *.doc
 *.docx
-自傳(含研究方向與讀書計畫).pdf
-others/
+*.pdf

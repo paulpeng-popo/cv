@@ -43,6 +43,7 @@
 \usepackage{bookmark} % for bookmarks
 \usepackage{lastpage} % for getting the total number of pages
 \usepackage{changepage} % for one column entries (adjustwidth environment)
+\usepackage{etoolbox}
 \usepackage{paracol} % for two and three column entries
 \usepackage{ifthen} % for conditional statements
 \usepackage{needspace} % for avoiding page brake right after the section title
@@ -205,17 +206,6 @@
 \renewcommand{\href}[2]{\hrefWithoutArrow{#1}{\ifthenelse{\equal{#2}{}}{ }{#2 }\raisebox{.15ex}{\footnotesize \faExternalLink*}}}
 
 
-% Define shortcut to load the Font Awesome font.
-\newfontfamily{\FA}{FontAwesome}
-% Generic command displaying an icon by its name.
-\newcommand*{\faicon}[1]{{
-  \FA\csname faicon@#1\endcsname
-}}
-% Define the list of known icons.
-\expandafter\def\csname faicon@file-pdf-o\endcsname {\symbol{"F1C1}} \def\faFilePdfO {{\FA\csname faicon@file-pdf-o\endcsname}}
-\expandafter\def\csname faicon@desktop\endcsname {\symbol{"F108}} \def\faDesktop {{\FA\csname faicon@desktop\endcsname}}
-
-
 \begin{document}
 \newcommand{\AND}{\unskip
     \cleaders\copy\ANDbox\hskip\wd\ANDbox
@@ -224,10 +214,10 @@
 \newsavebox\ANDbox
 \sbox\ANDbox{}
 
-% \placelastupdatedtext
+\placelastupdatedtext
 \begin{header}
     \fontsize{28 pt}{28 pt}
-    \textbf{Yu-Po Peng (Paul Peng)}
+    \textbf{Paul Peng}
 
     \vspace{0.3 cm}
 
@@ -360,8 +350,8 @@
 
 \begin{samepage}
     \begin{enumerate}[label={[\arabic*]}]
-        \item \mbox{\textbf{\textit{Yu-Po Peng}}}, \mbox{Chung-Ping Young}, \mbox{Wen-Hsiang Lu}, "\textbf{Design and Implementation of a Reasoning Question Answering System for Automatically Generating Implicit Questions Based on News Topics}," \textit{Master's Thesis, National Cheng Kung University}, 2024. \hspace*{\fill} \hrefWithoutArrow{http://140.116.245.147:1233/}{\faDesktop} \hrefWithoutArrow{https://hdl.handle.net/11296/w9hyxe}{\faFilePdfO}
-        \item \mbox{\textbf{\textit{Yu-Po Peng}}}, \mbox{Pin-Chung Chen}, \mbox{Kuan-Yu Ko}, \mbox{Jun-Huei Wang}, \mbox{Shin-Nan Guo}, \mbox{Chun-I Fan}, "\textbf{Secure Extended Mail System Based on Attribute-Based Encryption}," \textit{Cryptology and Information Security Conference}, 2022. \hspace*{\fill} \hrefWithoutArrow{https://github.com/paulpeng-popo/Security_mail/blob/main/CISC2022.pdf}{\faFilePdfO}
+        \item \mbox{\textbf{\textit{Yu-Po Peng}}}, \mbox{Chung-Ping Young}, \mbox{Wen-Hsiang Lu}, "\textbf{Design and Implementation of a Reasoning Question Answering System for Automatically Generating Implicit Questions Based on News Topics}," \textit{Master's Thesis, National Cheng Kung University}, 2024. \hspace*{\fill} \hrefWithoutArrow{http://140.116.245.147:1233/}{\faDesktop} \hrefWithoutArrow{https://hdl.handle.net/11296/w9hyxe}{\faIcon[regular]{file-pdf}}
+        \item \mbox{\textbf{\textit{Yu-Po Peng}}}, \mbox{Pin-Chung Chen}, \mbox{Kuan-Yu Ko}, \mbox{Jun-Huei Wang}, \mbox{Shin-Nan Guo}, \mbox{Chun-I Fan}, "\textbf{Secure Extended Mail System Based on Attribute-Based Encryption}," \textit{Cryptology and Information Security Conference}, 2022. \hspace*{\fill} \hrefWithoutArrow{https://github.com/paulpeng-popo/Security_mail/blob/main/CISC2022.pdf}{\faIcon[regular]{file-pdf}}
     \end{enumerate}
 \end{samepage}
 
@@ -454,7 +444,7 @@
     \textbf{Nmail System} \hspace{0.2cm} \hrefWithoutArrow{https://github.com/paulpeng-popo/Security_mail}{\faGithub} \hfill \projectrole{Lead Developer}
     \begin{highlights}
         \item Design a system that allows users to encrypt their emails with \textbf{ABE} before sending them.
-        \item \textbf{Skills:} Attribute-Based Encryption(ABE), Gmail API, AWS, System Design
+        \item \textbf{Skills:} Attribute-Based Encryption(ABE), Gmail API, Web Development
     \end{highlights}
 \end{twocolentry}
 
