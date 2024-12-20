@@ -21,7 +21,13 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          apt update && apt install -y make git
+          apt update && apt install -y make git fontconfig
+
+      - name: Install Fonts
+        run: |
+          mkdir -p ~/.local/share/fonts
+          cp -r fonts/* ~/.local/share/fonts
+          fc-cache -f -v
 
       - name: Build
         run: make
