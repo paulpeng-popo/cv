@@ -12,7 +12,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: thubo/latexmk:full
+      image: akashisn/latexmk:full
       options: --user root
 
     steps:
