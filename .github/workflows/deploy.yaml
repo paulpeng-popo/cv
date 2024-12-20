@@ -23,6 +23,11 @@ jobs:
         run: |
           apt update && apt install -y make git fontconfig
 
+      - name: Download Fonts
+        run: |
+          wget https://raw.githubusercontent.com/paulpeng-popo/cv/refs/heads/fonts/fonts.tar.gz
+          tar -zxvf fonts.tar.gz
+
       - name: Install Fonts
         run: |
           mkdir -p ~/.local/share/fonts

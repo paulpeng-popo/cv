@@ -4,9 +4,9 @@
 *.swp
 *.nosync
 old_cv/*
+others/*
 *.ppt
 *.pptx
 *.doc
 *.docx
 *.pdf
-others/
