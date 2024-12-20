@@ -12,7 +12,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: arkark/latexmk
+      image: arkark/latexmk:full
       options: --user root
 
     steps:
