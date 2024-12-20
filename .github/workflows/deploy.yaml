@@ -19,13 +19,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install Dependencies
-        run: |
-          apt update
-          apt install -y make git
-
       - name: Build
-        run: make
+        run: build.sh
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
