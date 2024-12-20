@@ -21,8 +21,8 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          apt-get update
-          apt-get install -y make git
+          apt update
+          apt install -y make git
 
       - name: Build
         run: make
