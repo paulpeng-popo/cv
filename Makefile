@@ -29,3 +29,4 @@ watch:
 clean:
 	$(LATEXMK) $(LATEXMKFLAGS) -C $(SOURCES)
 	rm -rf $(BUILD_DIR)
+	rm -f $(TARGETS)
