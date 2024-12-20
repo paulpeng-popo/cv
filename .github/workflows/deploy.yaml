@@ -23,6 +23,11 @@ jobs:
         run: |
           apt update && apt install -y make git
 
+      - name: Install FontAwesome
+        run: |
+          tlmgr install fontawesome
+          mktexlsr
+
       - name: Build
         run: make
 
