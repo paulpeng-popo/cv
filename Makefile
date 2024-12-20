@@ -2,8 +2,16 @@ SOURCES = $(wildcard *.tex)
 TARGETS = $(patsubst %.tex,%.pdf,$(SOURCES))
 BUILD_DIR = build.nosync
 
+# check if quiet is defined
+ifdef quiet
+SILENT = -silent
+else
+SILENT =
+endif
+# enable SILENT by `make quiet=1`
+
 LATEXMK = latexmk
-LATEXMKFLAGS = -xelatex -outdir=$(BUILD_DIR) -silent
+LATEXMKFLAGS = -xelatex -outdir=$(BUILD_DIR) $(SILENT)
 
 .PHONY: all watch clean
 
